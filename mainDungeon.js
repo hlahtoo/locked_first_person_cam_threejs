@@ -30,10 +30,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 document.body.appendChild(renderer.domElement);
 
 const player = new Player(scene, world);
-const mainDungeonURL = new URL(
-  "./src/main_dungeon_v4_compressed.glb",
-  import.meta.url
-);
+const mainDungeonURL = new URL("./src/floor2.glb", import.meta.url);
 
 let treasure_wall_gate_left = [];
 let treasure_wall_gate_right = [];

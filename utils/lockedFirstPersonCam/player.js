@@ -40,14 +40,9 @@ export class Player {
     // Restore the player's position from localStorage if it exists
     const storedPosition = localStorage.getItem("player_pos");
     const storedLookAt = localStorage.getItem("player_lookAt");
-    if (storedPosition) {
-      console.log(storedPosition);
-      const position = JSON.parse(storedPosition);
-      this.position.set(position.x, position.y, position.z);
-    } else {
-      // Default starting position
-      this.position.set(-0.3, 2, 6);
-    }
+
+    // Default starting position
+    this.position.set(-0.3, 3, 10);
 
     if (storedLookAt) {
       const lookAt = JSON.parse(storedLookAt);
